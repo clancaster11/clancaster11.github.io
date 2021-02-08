@@ -1,0 +1,47 @@
+<!--
+  // tailwind.config.js
+  module.exports = {
+    // ...
+    plugins: [
+      // ...
+      require('@tailwindcss/aspect-ratio'),
+    ]
+  }
+  ```
+-->
+<div id="team"
+    class="max-w-7xl sm:px-6 lg:px-8 lg:py-8 lg:my-24 sm:shadow-lg sm:rounded-lg px-4 py-12 mx-auto bg-white">
+    <div class="space-y-12">
+        <h2 class="sm:text-4xl text-3xl font-extrabold tracking-tight">Meet our lab</h2>
+
+        <ul class="sm:divide-y sm:divide-gray-200 sm:space-y-0 sm:-mt-8 lg:gap-x-8 lg:space-y-0 space-y-12">
+            <each loop="member, i in members">
+                <li class="sm:py-8" aria-label="{{member.name}} bio">
+                    <div class="sm:grid sm:grid-cols-3 sm:items-start sm:gap-6 sm:space-y-0 space-y-4">
+                        <!-- Image -->
+                        <div class="aspect-w-2 aspect-h-3">
+                            <img class="object-cover rounded-lg shadow-lg"
+                                src="{{member.image}}"
+                                alt="{{member.name}}">
+                        </div>
+                        <div class="sm:col-span-2">
+                            <div class="space-y-4">
+                                <div class="space-y-1 text-lg font-medium leading-6">
+                                    <h3>{{member.name}}</h3>
+                                    <p class="text-indigo-600">{{member.title}}</p>
+                                </div>
+                                <div class="text-lg">
+                                    <p class="text-gray-500">
+                                        <include src={{member.bioPath}}></include>
+                                    </p>
+                                </div>
+                                <a href="mailto:{{member.email}}" class="flex items-center text-indigo-500">
+                                    {{member.email}}</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </each>
+        </ul>
+    </div>
+</div>

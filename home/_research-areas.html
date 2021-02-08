@@ -1,0 +1,38 @@
+<div id='research-areas' class="sm:shadow-lg sm:rounded-lg bg-white border-t-2 border-indigo-700">
+    <div class="sm:px-6 lg:pt-16 lg:px-8 px-4 pt-16">
+        <div class="lg:max-w-7xl md:max-w-2xl relative max-w-lg pb-12 mx-auto divide-y-2 divide-gray-200">
+            <div>
+                <h2 class="sm:text-4xl text-3xl font-extrabold tracking-tight text-gray-900">
+                    Research Areas
+                </h2>
+                <!-- <p class="sm:mt-4 mt-3 text-xl text-gray-500">
+                    Studying the etiology and treatment of anxiety and stress-related disorders.
+                </p> -->
+            </div>
+
+            <dl class="Accordion mt-12 divide-y divide-indigo-200" data-allow-multiple>
+                <each loop="area, idx in areas">
+                    <div>
+                        <dt id="area-{{idx}}" 
+                            aria-expanded="false"
+                            aria-controls="area-description-{{idx}}"
+                            aria-labelledby="area-{{idx}}-title"
+                            tabindex=0
+                            class="Accordion-trigger group focus:ring-2 ring-indigo-500 focus:outline-none flex items-center col-span-3 px-6 py-4 text-xl font-semibold text-gray-900 rounded-md cursor-pointer">
+                            
+                            <svg class="toggle-indicator w-6 h-6 mr-2 transition-transform transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 5l7 7-7 7" />
+                            </svg>
+                            <h3 id="area-{{idx}}-title">{{area.title}}</h3>
+                        </dt>
+                        <dd id="area-description-{{idx}}" class="sm:ml-8 hidden px-6 py-4 text-base text-gray-600" aria-labelledby="area-{{idx}}" role="region">
+                            {{area.description}}
+                        </dd>
+                    </div>
+                </each>
+            </dl>
+        </div>
+    </div>
+</div>

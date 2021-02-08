@@ -1,0 +1,132 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    /* @apply bg-gray-50; */
+}
+
+.reference > span {
+    @apply font-medium text-black;
+}
+
+.publications {
+    @apply divide-y divide-indigo-100 bg-white sm:rounded-md shadow-md;
+}
+.publications li {
+    @apply py-6 px-6;
+}
+.publications li:hover,
+.publications li:focus-within {
+    @apply bg-indigo-500 text-white;
+}
+
+
+#main > div + div {
+    @apply mt-2 sm:mt-16 lg:mt-64;
+}
+
+#main > div:not(#hero) {
+    @apply shadow-lg;
+}
+
+#hero + div {
+    margin-top: 40vh;
+}
+
+#featured {
+    position: relative;
+    z-index: 10;
+}
+
+#featured, #team {
+    @apply border-t-4 border-indigo-700;
+}
+
+.bg-image {
+    @apply z-0 absolute w-screen h-screen top-28 sm:-top-16;
+}
+.bg-image img {
+    @apply h-auto object-cover w-full h-full opacity-80 absolute inset-0;
+}
+.bg-image-filter {
+    content: '';
+    @apply absolute inset-0 absolute inset-0 bg-gradient-to-t from-transparent to-white via-transparent opacity-90;
+}
+
+@keyframes dd-enter {
+    0% {
+        opacity: 0;
+        transform: scaleX(0);
+    }
+    50% {
+        transform: scaleX(1);
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#research-areas dd[aria-expanded=false] {
+    display: block;
+    transform-origin: left center;
+    animation-name: dd-enter;
+    animation-duration: 300ms;
+    animation-delay: 200ms;
+    animation-timing-function: ease-out;
+    animation-direction: reverse;
+}
+
+#research-areas dt[aria-expanded=true] + dd {
+    display: block;
+    transform-origin: left center;
+    animation-name: dd-enter;
+    animation-duration: 300ms;
+    animation-timing-function: ease-out;
+}
+
+
+#research-areas dt[aria-expanded=true] {
+    @apply bg-indigo-500 text-indigo-50;
+}
+#research-areas dt[aria-expanded=true] .toggle-indicator {
+    @apply rotate-90;
+}
+
+.training-description p:first-child {
+    @apply text-lg;
+}
+.training-description p + p {
+    @apply text-base leading-7;
+}
+
+#team a, .training-description a {
+    @apply text-indigo-600 hover:text-indigo-900 underline font-medium;
+}
+
+
+/* Entering: "duration-150 ease-out"
+From: "opacity-0 scale-95"
+To: "opacity-100 scale-100"
+Leaving: "duration-100 ease-in"
+From: "opacity-100 scale-100"
+To: "opacity-0 scale-95" */
+#MobileMenu[data-state="closed"] {
+    @apply hidden;
+}
+#MobileMenu[data-state^="entering-"] {
+    @apply duration-150 ease-out;
+}
+#MobileMenu[data-state="entering-from"],
+#MobileMenu[data-state="leaving-to"] {
+    @apply opacity-0 scale-95; 
+}
+#MobileMenu[data-state="entering-to"],
+#MobileMenu[data-state="leaving-from"] {
+    @apply opacity-100 scale-100;
+}
+#MobileMenu[data-state^="leaving-"] {
+    @apply duration-100 ease-in;
+}
+

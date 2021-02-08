@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Center for Fear-Less Research</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+  <style>
+    body { 
+      margin: 0; 
+      font-family: Roboto, Helvetica;
+      color: #333;
+      font-size: 16px;
+      /*font-weight: 300;*/
+      background: #f6f6f6;
+    }
+    
+    #content {
+      padding: 2rem 10%;
+      max-width: 700px;
+      margin: 0 auto;
+      line-height: 1.5rem;
+      padding-bottom: 4rem;
+      color: rgba(0,0,0,0.9);
+    }
+
+    #content h2 {
+      text-transform: uppercase;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+    }
+
+    #content p {
+      margin-top: 0;
+    }
+
+    #content h2:not(:first-child) {
+      margin-top: 2rem;
+    }
+
+    #hero {
+      width: 100vw;
+      height: 90vh;
+      position: relative;
+      background-image: url('hero-cut.png'); //url('hero.jpg');
+      background-size: cover;
+      /*background-position-y: -32vh;*/
+    }
+    #hero .announcementBar {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(32, 49, 127, 0.95);
+    }
+
+    #hero .announcementBar .content {
+      padding: ;
+      margin-left: 1rem;
+      margin-right: 1rem;
+      margin: 0 auto;
+      padding: 18px;
+      max-width: 700px;
+      color: white;
+      line-height: 24px;
+      font-size: 18px;
+      opacity: 0.9;
+      text-shadow: 0px 2px 2px rgba(0,0,0,0.2);
+    }
+
+    #hero .announcementBar .content a {
+      color: white;
+      font-weight: 500;
+      text-shadow: none;
+    }
+
+    .titles {
+      color: white;
+      background: rgba(0,0,0, 0.5);
+      text-transform: uppercase;
+      text-align: right;
+      text-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+      max-width: 700px;
+      position: absolute; 
+      top: 200px;
+      right: 0;
+      padding: 36px 64px;
+    }
+    .titles h1, h2 {
+      margin: 0;
+    }
+    .titles h1 {
+      font-size: 36px;
+      font-weight: 500;
+    }
+
+    .titles h2 {
+      color: white;
+      font-size: 24px;
+      font-weight: 100;
+      text-transform: uppercase;
+    }
+
+    #ResearchAreas {
+      list-style: none;
+      padding: 0;
+    }
+
+      #ResearchAreas li {
+        box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+        background: white;
+
+        padding: 1rem;
+        margin-left: -1rem;
+        margin-right: -1rem;
+
+        line-height: 24px;
+        color: rgba(0,0,0,0.8);
+      }
+
+      #ResearchAreas li .header {
+        font-weight: bold;
+        text-transform: uppercase;
+        color: rgba(0,0,0,0.7);
+      }
+
+      #ResearchAreas li ~ li {
+        margin-top: 1rem;
+      }
+
+    .Bio {
+      display: flex;
+      /*flex-wrap: wrap;*/
+    }
+      .Bio-content {
+        padding-right: 1rem;
+
+      }
+
+      .Bio-pic img {
+        box-shadow: 0 2px 2px rgba(0,0,0,0.6);
+      }
+      .caption {
+        text-align: right;
+        text-shadow: 0px 2px 2px rgba(0,0,0,0.2);
+      }
+    /*.notice {
+      /*font-weight: bold;*/
+      /*letter-spacing: 0.2rem;*/
+      background: rgba(0,0,255, 0.5);
+      padding: 1em;
+      border-radius: 3px;
+    }*/
+  </style>
+</head>
+<body>
+  <div id="hero">
+    <div class="titles">
+      <h1>
+        The Center for Fear-Less Research
+        <!-- <small>Studying anxiety-related disorders and their treatment</small> -->
+      </h1>
+      <h2>Understanding & Conquering Problematic Fear</h2>
+    </div>
+    <div class="announcementBar">
+      <div class="content">
+        Dr. Lancaster is accepting graduate student applications at the University of Nevada Reno for 2018. Contact her via <a href="mailto:cynthialancaster@unr.edu">email</a> or view her bio and apply at the <a href="https://www.unr.edu/psychology/faculty/cynthia-lancaster">UNR website.</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="content">
+<!--     <div class="notice">Dr. Lancaster is accepting graduate student applications at the University of Nevada Reno for 2018. Contact her via <a href="mailto:cynthialancaster@unr.edu">email</a> or view her bio and apply at the <a href="https://www.unr.edu/psychology/faculty/cynthia-lancaster">UNR website.</a></div> -->
+    <h2>Mission</h2>
+    <p>Research the prevention and treatment of anxiety-related disorders. Question all assumptions, 
+leverage new technologies, and collaborate with adjacent fields of study.</p>
+
+    <h2>Ongoing Research &amp; Future Directions</h2>
+
+    <ul id='ResearchAreas'>
+      <li>
+        <div class="header">
+          Translational research, from basic science to the clinic
+        </div>
+        <div class="content">
+          Leveraging cutting edge findings on mechanisms of fear reduction in animal models to improve exposure therapy outcomes for anxiety-related disorders (i.e., promoting reconsolidation update versus new inhibitory learning) 
+        </div>
+      </li>
+      <li>
+        <div class="header">
+          Gaming
+        </div>
+        <div class="content">
+          Drawing on the use of reward and immersion in virtual-reality game play to improve engagement in, and reduce dropout from, exposure based therapies. 
+        </div>
+      </li>
+      <li>
+        <div class="header">
+          Neurofeedback
+        </div>
+        <div class="content">
+          Use of neurofeedback during exposure therapy to facilitate mechanisms of fear reduction.
+        </div>
+      </li>
+      <li>
+        <div class="header">
+          Dissemination
+        </div>
+        <div class="content">
+          Improving dissemination of cognitive-behavioral therapies for anxiety related disorders via web-based applications, 3D video, and gaming systems. Identifying and targeting therapist-related barriers to implementation of exposure-based techniques.
+        </div>
+      </li>
+    </ul>
+
+    <h2>Lab Director</h2>
+    <div class="Bio">
+      <div class="Bio-content">
+        <p>Cynthia L. Lancaster leads the Center for Fear-less Research at the University of Nevada, Reno where she is an assistant professor of clinical psychology.</p>
+        <div class="links">
+          <a href="https://www.unr.edu/psychology/faculty/cynthia-lancaster">Biography</a> | <a href="https://www.unr.edu/Documents/liberal-arts/Psychology/Lancaster_CV.pdf">Curriculum Vitae</a>
+        </div>
+      </div>
+      <div class="Bio-pic">
+        <img src="portrait.jpg" alt="Cynthia Lancaster, Ph.D.">
+        <div class="caption">Cynthia L. Lancaster, Ph.D.</div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
+

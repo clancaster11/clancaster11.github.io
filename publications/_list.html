@@ -1,0 +1,19 @@
+<h2 class="px-6 mt-8 mb-4 text-2xl font-semibold text-gray-700">Selected Publications</h2>
+<ul class="publications">
+    <each loop="pub,i in publications">
+        <li class="publication">
+            <a id="publication-{{i}}" href="https://google.com/search?q={{encodeURIComponent(pub.reference)}}" target="_blank">
+                {{ pub }}
+            </a> 
+        </li>
+    </each>
+</ul>
+
+<h2 class="px-6 mt-16 mb-4 text-2xl font-semibold text-gray-700">Recent Conference Presentations</h2>
+<ul class="conference_presentations sm:rounded-md bg-white divide-y divide-indigo-100 shadow-md">
+    <each loop="pub,i in conf_presentations">
+        <li class="presentation px-6 py-8">
+            {{ pub }}
+        </li>
+    </each>
+</ul>
