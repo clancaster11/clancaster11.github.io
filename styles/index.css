@@ -101,8 +101,14 @@ body {
     @apply text-base leading-7;
 }
 
-#team a, .training-description a {
-    @apply text-indigo-600 hover:text-indigo-900 underline font-medium;
+#team a, 
+.training-description a {
+    @apply text-indigo-600 hover:text-indigo-900 hover:underline font-semibold;
+}
+
+#team a:focus, 
+.training-description a:focus {
+    @apply font-extrabold;
 }
 
 

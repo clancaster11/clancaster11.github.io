@@ -15,7 +15,6 @@
 
 <body>
     <!-- begin content -->
-    <!-- This example requires Tailwind CSS v2.0+ -->
     <div class="bg-gray-50 relative overflow-hidden">
         <div class="sm:block sm:absolute sm:inset-y-0 sm:h-full sm:w-full hidden" aria-hidden="true">
             <div class="max-w-7xl relative h-full mx-auto">
@@ -43,11 +42,10 @@
         </div>
 
         <div class="bg-image">
-            <!-- <img src="./hero.png" alt="Man looking over cliff"> -->
-            <img src="./images/climbers.jpg" class="" alt="Two climbers ascending a snowy mountain" />
+            <img src="./images/hero.png" alt="Man looking over cliff">
             <div class="bg-image-filter"></div>
-
         </div>
+        
         <div class="sm:pb-24 relative pb-16">
 
             <include src="./_main_nav.html">{"active": "home"}</include>
@@ -74,11 +72,8 @@
                         ]
                     }
                 </include>
-                <include src="training.html">
+                <include src="training.html"></include>
 
-                </include>
-
-                
                 <include src="home/_team.html">
                     {
                         "members": [
@@ -87,23 +82,38 @@
                                 "name": "Cynthia Lancaster, Ph.D.",
                                 "title": "Lab Director",
                                 "bioPath": "team/cindy.html",
-                                "email": "foo@unr.edu",
-                                "image": "./portrait.jpg"
+                                "email": "cynthialancaster@unr.edu",
+                                "image": "./images/cindy.jpg"
                             },
                             {
-                                "name": "Sam-wise Gamgee",
+                                "name": "Sam Meckes",
                                 "title": "Ph.D. Candidate",
                                 "bioPath": "team/sam.html",
                                 "email": "foo@unr.edu",
-                                "image": "https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80"
+                                "image": "./images/sam.jfif"
                             },
                             {
-                                "name": "Mollie Ringwald",
+                                "name": "Mollie McDonald",
                                 "title": "Ph.D. Candidate",
                                 "bioPath": "team/mollie.html",
-                                "email": "foo@unr.edu",
-                                "image": "https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80"
+                                "email": "molliemcdonald@nevada.unr.edu",
+                                "image": "./images/mollie.jpg"
+                            },
+                            {
+                                "name": "Mary Smirnova",
+                                "title": "Ph.D. Candidate",
+                                "bioPath": "team/mary_smirnova.html",
+                                "email": "msmirnova@nevada.unr.edu",
+                                "image": "./images/mary_smirnova.jpg"
+                            },
+                            {
+                                "name": "Anna Cole",
+                                "title": "Ph.D. Candidate",
+                                "bioPath": "team/anna_cole.html",
+                                "email": "accole@nevada.unr.edu",
+                                "image": "./images/anna_cole.jpg"
                             }
+
                         ]
                     }
                 </include>

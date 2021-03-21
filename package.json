@@ -9,7 +9,7 @@
   "devDependencies": {
     "@tailwindcss/aspect-ratio": "^0.2.0",
     "autoprefixer": "^10.2.4",
-    "parcel": "^2.0.0-nightly.574",
+    "parcel": "^2.0.0-nightly.628",
     "postcss": "^8.2.4",
     "posthtml-expressions": "^1.7.1",
     "posthtml-include": "^1.6.0",
