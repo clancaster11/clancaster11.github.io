@@ -10,9 +10,11 @@
     "@tailwindcss/aspect-ratio": "^0.2.0",
     "autoprefixer": "^10.2.4",
     "parcel": "^2.0.0-nightly.628",
+    "post-sequence": "^0.3.0",
     "postcss": "^8.2.4",
     "posthtml-expressions": "^1.7.1",
     "posthtml-include": "^1.6.0",
+    "serve": "^11.3.2",
     "tailwindcss": "^2.0.2"
   }
 }

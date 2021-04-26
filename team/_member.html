@@ -1,0 +1,25 @@
+<li class="sm:py-8" aria-label="{{name}} bio">
+    <div class="sm:grid sm:grid-cols-3 sm:items-start sm:gap-6 sm:space-y-0 space-y-4">
+        <!-- Image -->
+        <div class="aspect-w-2 aspect-h-3">
+            <img class="object-cover rounded-lg shadow-lg"
+                src="{{image}}"
+                alt="{{name}}">
+        </div>
+        <div class="sm:col-span-2">
+            <div class="space-y-4">
+                <div class="space-y-1 text-lg font-medium leading-6">
+                    <h3>{{name}}</h3>
+                    <p class="text-indigo-600">{{title}}</p>
+                </div>
+                <div class="text-lg">
+                    <p class="text-gray-500">                   
+                        {{{bio}}}
+                    </p>
+                </div>
+                <a href="mailto:{{email}}" class="flex items-center text-indigo-500">
+                    {{email}}</a>
+            </div>
+        </div>
+    </div>
+</li>
