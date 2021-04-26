@@ -4,7 +4,9 @@
   "license": "MIT",
   "scripts": {
     "dev": "parcel serve index.html",
-    "build": "rm -rf ./dist && rm -rf .parcel-cache && parcel build index.html"
+    "raw_build": "parcel build index.html && cp _config.yml dist/",
+    "build": "rm -rf ./dist && rm -rf .parcel-cache && parcel build index.html && cp _config.yml dist/",
+    "deploy": "git subtree push --prefix dist origin gh-pages"
   },
   "devDependencies": {
     "@tailwindcss/aspect-ratio": "^0.2.0",
