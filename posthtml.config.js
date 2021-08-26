@@ -27,31 +27,38 @@ const plugins = {
         },
         {
           "name": "Sam Meckes",
-          "title": "Ph.D. Candidate",
+          "title": "Doctoral Student",
           "email": "meckes@nevada.unr.edu",
           "image": "./images/sam.jfif",
-          "bio": 'Sam is a third year doctoral student in the clinical psychology program at UNR. She received her undergraduate degree from Dartmouth College, and her M.A. in clinical psychology (emphasis in Marriage and Family Therapy) from Azusa Pacific University. Sam’s current research interests draw from social and clinical psychology, particularly in the areas of intergroup relations, empathy, and anxiety. Outside of the lab, Sam likes to hike or kayak with her husband and two dogs, garden, and bake all the things.'
+          "bio": 'Sam is a fourth-year doctoral student in the clinical psychology program at UNR. She received her undergraduate degree from Dartmouth College, and her M.A. in clinical psychology (emphasis in Marriage and Family Therapy) from Azusa Pacific University. Sam’s current research interests draw from social and clinical psychology, particularly in the areas of intergroup relations, empathy, and anxiety. Outside of the lab, Sam likes to hike or kayak with her husband and two dogs, garden, and bake all the things.'
         },
         {
           "name": "Mollie McDonald",
-          "title": "Ph.D. Candidate",
+          "title": "Doctoral Student",
           "email": "molliemcdonald@nevada.unr.edu",
           "image": "./images/mollie.jpg",
-          "bio": 'Mollie is a third-year doctoral student in the clinical psychology program at UNR. She earned her BA in psychology with a minor in statistics from California State University, Sacramento. She is currently researching how mindfulness practices promote psychological resilience via mechanisms such as improved distress tolerance and executive functioning. Although she is part of UNR\'s "wolf pack," she maintains that she is a cat-person.'
+          "bio": 'Mollie is a fourth-year doctoral student in the clinical psychology program at UNR. She earned her BA in psychology with a minor in statistics from California State University, Sacramento. She is currently researching how mindfulness practices promote psychological resilience via mechanisms such as improved distress tolerance and executive functioning. Although she is part of UNR\'s "wolf pack," she maintains that she is a cat-person.'
         },
         {
           "name": "Mary Smirnova",
-          "title": "Ph.D. Candidate",
+          "title": "Doctoral Student",
           "email": "msmirnova@nevada.unr.edu",
           "image": "./images/mary_smirnova.jpg",
-          "bio": 'Mary is a second year doctoral student in the clinical psychology program at UNR. She graduated from UC Irvine with a B.A. in Psychology and Social Behavior, where she did an honors project focusing on how positive emotion impacts moral decision-making. After college, she joined Dr. Aoife O\'Donovan\'s THRIVE lab as a lab manager and study coordinator and worked on projects related to PTSD and the immune system. Now she is excited to be a graduate student at the Center for Fearless Research to examine mechanisms of anxiety disorders and PTSD and how to utilize these mechanisms to help guide treatment. Currently, she is interested in leveraging social support and gratitude to help individuals with PTSD. In her free time, she enjoys lifting weights, climbing walls, traveling, hiking, and reading (for fun). '
+          "bio": 'Mary is a third-year doctoral student in the clinical psychology program at UNR. She graduated from UC Irvine with a B.A. in Psychology and Social Behavior, where she did an honors project focusing on how positive emotion impacts moral decision-making. After college, she joined Dr. Aoife O\'Donovan\'s THRIVE lab as a lab manager and study coordinator and worked on projects related to PTSD and the immune system. Now she is excited to be a graduate student at the Center for Fearless Research to examine mechanisms of anxiety disorders and PTSD and how to utilize these mechanisms to help guide treatment. Currently, she is interested in leveraging social support and gratitude to help individuals with PTSD. In her free time, she enjoys lifting weights, climbing walls, traveling, hiking, and reading (for fun). '
         },
         {
           "name": "Anna Cole",
-          "title": "Ph.D. Candidate",
+          "title": "Doctoral Student",
           "email": "accole@nevada.unr.edu",
           "image": "./images/anna_cole.jpg",
-          "bio": 'Anna is a first year doctoral student in the clinical psychology program at UNR. She earned her B.A. in psychology at the University of Mississippi and her M.A. in psychological sciences at Northern Arizona University. Her current research interests include examining the role of disgust in maintaining anxiety disorders and augmenting exposure therapy to improve outcomes. Outside of research, Anna is an avid plant collector and enjoys watching Ole Miss sports with her Great Dane named George. '
+          "bio": 'Anna is a second-year doctoral student in the clinical psychology program at UNR. She earned her B.A. in psychology at the University of Mississippi and her M.A. in psychological sciences at Northern Arizona University. Her current research interests include examining the role of disgust in maintaining anxiety disorders and augmenting exposure therapy to improve outcomes. Outside of research, Anna is an avid plant collector and enjoys watching Ole Miss sports with her Great Dane named George. '
+        },
+        {
+          "name": "Kylie Baer",
+          "title": "Doctoral Student",
+          "email": "kyliebaer@nevada.unr.edu",
+          "image": "./images/kylie_baer.jpg",
+          "bio": 'Kylie is a first-year doctoral student in the clinical psychology program at UNR. She received her B.A. in psychology at San Diego State University and worked as a research assistant in Dr. Nader Amir’s Center for Understanding and Treating Anxiety lab. Following, she joined Dr. Catherine Ayers’ lab at the San Diego VA Medical Center as a study coordinator and lab manager. There, she worked on multiple RCTs assessing the efficacy of adjunct interventions to exposure in treating veterans with hoarding disorder and PTSD. She intends to further her work in exposure therapy and anxiety/trauma at UNR, focusing on elucidating mechanisms to refine treatments. Apart from psychology, Kylie is interested in fitness and nutrition and enjoys camping, playing volleyball, going to music festivals, and making new recipes in her Instant Pot.'
         }
       ],
       mailing_address: "University of Nevada, Reno<br />1664 N. Virginia Street<br />Mailstop 0298<br />Reno, NV 89502",
